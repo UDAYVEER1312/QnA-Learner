@@ -92,7 +92,7 @@ class Custom_Dataset(Dataset):
         text_to_id_answer = text_to_indices(self.data['answer'][index],self.vocab, False)
         return torch.tensor(text_to_id_question) , torch.tensor(text_to_id_answer)
 ```
-For DataLoader and Training see the `ipynb` file [simple_QnA_rnn_model.ipynb]()
+For DataLoader and Training see the `ipynb` file [QnA_model.ipynb]()
 # Predictions
 What if we make some changes to a question and then try to predict the answer that the model has learned so far?
 
